@@ -18,9 +18,9 @@ export default function LineupTable({ lineups }: LineupTableProps) {
       {lineups.map((lineup) => (
         <table key={lineup.id} border={1}>
           <LineupTableHead
-            dayHeadTitle={dayHeadTitle}
-            dateHeadTitle={dateHeadTitle}
-            artistHeadTitle={artistHeadTitle}
+            firstTitle={dayHeadTitle}
+            secondTitle={dateHeadTitle}
+            thirdTitle={artistHeadTitle}
           />
           <LineupTableBody
             lineup={lineup}

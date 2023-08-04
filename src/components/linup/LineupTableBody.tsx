@@ -6,7 +6,7 @@ type LineupTableBodyProps = {
     lineup: Lineup;
   }
 
-export default function LineupTableBody({ lineup }: LineupTableBodyProps) {
+export default function FoodTruckTableBody({ lineup }: LineupTableBodyProps) {
   const { day, date, artist } = lineup;
   return (
     <tbody>

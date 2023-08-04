@@ -1,6 +1,7 @@
-import LineupTableBody from '../linup/LineupTableBody';
 import LineupTableHead from '../linup/LineupTableHead';
-
+import FoodTruckTableBody from './FoodTruckTableBody';
+import Map
+  from '../Map';
 import FoodTruck from '../../types/FoodTruck';
 
 type LineupTableProps = {
@@ -8,22 +9,24 @@ type LineupTableProps = {
 }
 
 export default function FoodTruckTable({ foodTrucks }: LineupTableProps) {
-  const dayHeadTitle = 'DAY';
-  const dateHeadTitle = '날짜';
-  const artistHeadTitle = '아티스트';
+  const firestTitle = '위치';
+  const secondTitle = '음식';
 
   return (
     <div>
       <h2>푸드트럭</h2>
-      {foodTrucks.map((foodTrucks) => (
-        <table key={foodTrucks.id} border={1}>
+      <Map
+        latitude={37.376030790483306}
+        longitude={126.6344256401589}
+      />
+      {foodTrucks.map((foodTruck) => (
+        <table key={foodTruck.id} border={1}>
           <LineupTableHead
-            dayHeadTitle={dayHeadTitle}
-            dateHeadTitle={dateHeadTitle}
-            artistHeadTitle={artistHeadTitle}
+            firstTitle={firestTitle}
+            secondTitle={secondTitle}
           />
-          <LineupTableBody
-            lineup={lineup}
+          <FoodTruckTableBody
+            foodTruck={foodTruck}
           />
         </table>
       ))}
