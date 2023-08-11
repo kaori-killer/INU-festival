@@ -45,7 +45,7 @@ export default function Category({
     라인업: '/lineup',
     푸드트럭: '/foodtruck',
     부스위치: '/booth',
-    공지사항: '/anno',
+    공지사항: '/notice',
   };
 
   const navigate = useNavigate();

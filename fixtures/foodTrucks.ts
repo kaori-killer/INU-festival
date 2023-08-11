@@ -20,18 +20,18 @@ const foodtrucks = [
     menu: [
       {
         id: 'FOOD_04',
-        name: '김밥',
-        img: '/images/juicy.png',
+        name: '돈가스',
+        img: '/images/돈가스.png',
       },
       {
         id: 'FOOD_05',
-        name: '제육김밥',
-        img: '/images/juicy.png',
+        name: '떡꼬치',
+        img: '/images/떡꼬치.png',
       },
       {
         id: 'FOOD_06',
-        name: '기본초밥',
-        img: '/images/juicy.png',
+        name: '카레우동',
+        img: '/images/카레우동.png',
       },
     ],
   },
@@ -41,18 +41,18 @@ const foodtrucks = [
     menu: [
       {
         id: 'FOOD_07',
-        name: '김밥',
-        img: '/images/juicy.png',
+        name: '비빔밥',
+        img: '/images/비빔밥.png',
       },
       {
         id: 'FOOD_08',
-        name: '제육김밥',
-        img: '/images/juicy.png',
+        name: '밥 추가',
+        img: '/images/밥 추가.png',
       },
       {
         id: 'FOOD_09',
-        name: '기본초밥',
-        img: '/images/juicy.png',
+        name: '김치',
+        img: '/images/김치.png',
       },
     ],
     coordinate: {

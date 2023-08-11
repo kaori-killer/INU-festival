@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import styled from 'styled-components';
 
 import Menu from './Menu';
@@ -11,7 +9,13 @@ const Row = styled.tr`
   flex-direction: column;
   padding-block: 3em;
   border-bottom: 1px solid ${(props) => props.theme.colors.line};
-  
+
+  &:hover {
+    color: ${(props) => props.theme.colors.buttonHoverBorder};
+    /* background: ${(props) => props.theme.colors.buttonHoverBackground}; */
+    /* border-radius: 2em; */
+  }
+
   &:last-of-type {
     border-bottom: 0;    
   }
@@ -50,12 +54,9 @@ export default function FoodTruckTableBody({
   } = foodTruck;
   const { latitude, longitude } = coordinate;
 
-  const [isClick, setIsClick] = useState(false);
-
   const handleClick = (() => {
     setCoordinaet({ latitude, longitude });
     setOpenMenuId(id);
-    setIsClick(!isClick);
   });
 
   return (
@@ -67,7 +68,7 @@ export default function FoodTruckTableBody({
           {location}
         </td>
         <td>
-          {isOpen && isClick && <Menu menu={menu} /> }
+          {isOpen && <Menu menu={menu} /> }
         </td>
       </Row>
     </tbody>

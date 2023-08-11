@@ -75,14 +75,14 @@ export default function IntroPage() {
           type="button"
           onClick={() => handleClickNext('lineup')}
         >
-          <img src="/images/fastfood.png" alt="" />
+          <img src="/images/mike.png" alt="마이크" />
           <span>라인업</span>
         </Button>
         <Button
           type="button"
           onClick={() => handleClickNext('foodtruck')}
         >
-          <img src="/images/fastfood.png" alt="" />
+          <img src="/images/fastfood.png" alt="음식" />
           <span>푸드트럭</span>
         </Button>
       </Wrapper>

@@ -20,7 +20,7 @@ export default function Categories() {
     '/lineup': '라인업',
     '/foodtruck': '푸드트럭',
     '/booth': '부스위치',
-    '/anno': '공지사항',
+    '/notice': '공지사항',
   };
   const { pathname } = window.location;
   const selectedCategory = path[pathname];

@@ -15,7 +15,9 @@ const Item = styled.button`
   text-align: start;
   color: ${(props) => props.theme.colors.text};
   cursor: pointer;
-  
+  width: 100%;
+  height: 100%;
+
   /* &:hover {
     border-color: ${(props) => props.theme.colors.buttonHoverBorder};
     background: ${(props) => props.theme.colors.buttonHoverBackground};

@@ -21,7 +21,7 @@ export default function Map({ latitude, longitude }: MapProps) {
     if (!container) return;
     const options = {
       center: new kakao.maps.LatLng(latitude, longitude),
-      level: 4,
+      level: 3,
     };
     const map = new kakao.maps.Map(container, options);
 
