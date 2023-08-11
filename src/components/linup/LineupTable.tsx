@@ -1,32 +1,30 @@
+import styled from 'styled-components';
+
 import LineupTableBody from './LineupTableBody';
-import LineupTableHead from './LineupTableHead';
 
 import Lineup from '../../types/Lineup';
+
+const Container = styled.div`
+  padding-block: 3em;
+  padding-inline: ${(props) => props.theme.sizes.contentPadding};
+  border-top-right-radius: ${(props) => props.theme.sizes.contentBorderRadius};
+  background-color: ${(props) => props.theme.colors.secondary};
+`;
 
 type LineupTableProps = {
     lineups: Lineup[];
 }
 
 export default function LineupTable({ lineups }: LineupTableProps) {
-  const dayHeadTitle = 'DAY';
-  const dateHeadTitle = '날짜';
-  const artistHeadTitle = '아티스트';
-
   return (
-    <div>
-      <h2>라인업</h2>
+    <Container>
       {lineups.map((lineup) => (
         <table key={lineup.id} border={1}>
-          <LineupTableHead
-            firstTitle={dayHeadTitle}
-            secondTitle={dateHeadTitle}
-            thirdTitle={artistHeadTitle}
-          />
           <LineupTableBody
             lineup={lineup}
           />
         </table>
       ))}
-    </div>
+    </Container>
   );
 }

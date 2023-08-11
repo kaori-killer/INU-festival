@@ -11,6 +11,12 @@ const guests = [
     time: '21:00',
     img: '/images/juicy.png',
   },
+  {
+    id: 'GUEST_03',
+    name: '허각',
+    time: '21:30',
+    img: '/images/juicy.png',
+  },
 ];
 
 export default guests;

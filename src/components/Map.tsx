@@ -1,6 +1,14 @@
 import { useEffect } from 'react';
 
+import styled from 'styled-components';
+
 const { kakao } = window;
+
+const Container = styled.div`
+  border-radius: 2em;
+  margin: 0;
+  padding-block: 10em;
+`;
 
 type MapProps = {
     latitude: number;
@@ -13,7 +21,7 @@ export default function Map({ latitude, longitude }: MapProps) {
     if (!container) return;
     const options = {
       center: new kakao.maps.LatLng(latitude, longitude),
-      level: 3,
+      level: 4,
     };
     const map = new kakao.maps.Map(container, options);
 
@@ -24,14 +32,10 @@ export default function Map({ latitude, longitude }: MapProps) {
     });
 
     marker.setMap(map);
-  }, []);
+  }, [latitude, longitude]);
   return (
-    <div
+    <Container
       id="map"
-      style={{
-        width: '500px',
-        height: '500px',
-      }}
     />
   );
 }
