@@ -12,7 +12,7 @@
     "coverage": "jest --coverage --coverage-reporters html",
     "watch:test": "jest --watchAll"
   },
-  "homepage": "https://kaori-killer.github.io/INU-festival/",
+  "homepage": "https://kaori-killer.github.io/INU-festival",
   "keywords": [],
   "author": "",
   "license": "ISC",
