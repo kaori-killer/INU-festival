@@ -51,5 +51,5 @@ npm install
 ## 실행하기
 
 ```bash
-npm install
+npm run start
 ```
